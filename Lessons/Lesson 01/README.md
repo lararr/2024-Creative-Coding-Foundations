@@ -2,7 +2,7 @@
 
 ## My First Page
 
-Lesson about the introduction to HTML and CSS.
+Introduction to HTML and CSS.
 
 ## Intro Exercise 1
 
