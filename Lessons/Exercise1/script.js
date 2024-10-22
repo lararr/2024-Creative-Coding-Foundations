@@ -10,7 +10,11 @@ let winner = getRandomInt(1, 9);
 let tries = 1;
 const buttons = document.getElementsByClassName("btn-hidden");
 const result = document.getElementById("result");
+const newGame = document.getElementById("new-game");
 
+newGame.addEventListener("click", function () {
+    location.reload();
+});
 /*Check the behaviour of the game. Numbers of tries and style update on btn click.
 At each click the if clause check if the value of the btn is equal to the random int generated during the load of the page. 
 After the check it changes the class of the btn, it disable the btn in order to prevend multiple clicks 
@@ -35,5 +39,10 @@ for (var i = 0; i < buttons.length; i++) {
         }
     });
 }
+
+//By clicking this btn you start a new game. This operation could be done in tons of other ways. This is the fastest (but maybe not the most correct).
+newGame.addEventListener("click", function () {
+    location.reload();
+});
 
 
