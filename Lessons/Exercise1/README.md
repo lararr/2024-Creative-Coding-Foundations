@@ -5,4 +5,4 @@ Catch the Dog!
 Luca Ferrari
 
 ## Concept description
-It is a simple game. You have to find the dog in as many tries as possible.
+It is a simple game. You must find the dog in as few attempts as possible.
