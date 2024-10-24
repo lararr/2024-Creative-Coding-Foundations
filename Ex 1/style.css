@@ -1,0 +1,143 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #24cc44;
+    background-color:black ;
+}
+
+/*animation fade in video*/
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}  
+
+
+body {
+    cursor: crosshair;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:-100;
+    animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+/*animation typewriter*/ 
+h1 {
+    position: relative;
+    width: 390px;
+}
+
+h1::before, h1::after{
+    
+    content: '';
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before {
+    background: black;
+    animation: typewriter 5s steps(18) forwards;
+
+}
+h1::after{
+    width: 0.125rem;
+    background: #24cc44;
+    animation: typewriter 5s steps(18) forwards;
+
+}
+
+@keyframes typewriter {
+    to{
+        left: 100%;
+    }
+
+}
+
+.typewriter {
+    max-width: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 10px;
+}
+
+button{
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0.2rem;
+    color: #24cc44;
+    background-color:black ;
+    border-color: #24cc44;
+    border-width: 0.1rem ;
+    
+}  
+
+button:hover {
+    background-color: darkgreen;
+    position: relative;
+    top: -0.1rem; 
+}
+
+button:active {
+    background-color: greenyellow;   
+    cursor: progress;    
+    position: relative;
+    top:0.1rem; 
+}
+
+#button-space {
+    padding: 18px 45px 18px 45px;
+}
+
+#output{
+    color: #24cc44;
+    max-width: 80%;
+    padding: 5px 50px 5px 10px; 
+    border-radius: 1rem;
+    animation: blink 1s infinite;
+    animation-iteration-count: 20;
+    word-wrap: break-word; /* Forces long words to wrap */
+    overflow: hidden; 
+    white-space: normal;
+    box-sizing: border-box;
+}
+
+/*cube after the text*/
+#output::after {
+    content: "\25A0";
+    display: inline-block;
+    padding: 0.5em;
+    color: #24cc44;
+    animation: blink 1s infinite;
+}
+
+/*animation blinking text*/
+@keyframes blink {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}  
+
+img{
+    height: 150px;
+}
