@@ -1,10 +1,6 @@
-# Project title
+# Bop Tuner
 
-Bop Tuner
-
-## Author
-
-Luca Enrico Spallino
+## Luca Enrico Spallino
 
 ## Concept description
 
