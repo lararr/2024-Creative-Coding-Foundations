@@ -51,7 +51,7 @@ buttons.forEach(button => {
 });
 
 
-// i try my own version
+// count the number of time the clear button is click but it s not working
 let clickCountClear = 0;
 function handleButtonClickClear() {
     clickCountClear++; // Increment the counter on each click
@@ -61,7 +61,7 @@ function handleButtonClickClear() {
         alert('Morphoeus is speaking to u\r\n');
     }
 }
-// Attach the click event listener to the clear button
+// Attach the click event listener to the clear button must be soemthing wrong with this
 buttonClear.addEventListener('click', handleButtonClickClear);
 buttonClear.addEventListener('click', () => { 
     outputParagraph.innerText = '>';
@@ -82,7 +82,7 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-// cat gif is not working :'( so i add a cat gif
+// cat gif is not working :'( so i add a cat meme image
 document.addEventListener('keydown', function(event) {
     if (event.key === 'm') {
         outputParagraph.innerHTML = '<img src="https://i.pinimg.com/enabled/564x/c1/7b/34/c17b345e50f9faebd384e01c3c622b1f.jpg">';
