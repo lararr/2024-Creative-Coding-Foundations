@@ -135,4 +135,5 @@ restartPlaying.addEventListener("click", () => {
   console.log("Game Over");
   document.getElementById("end-popup").style.display = "none";
   gnomeImage.src = "./assets/imgs/Gnome0.png";
+  sendAdventure.disabled = false;
 });
