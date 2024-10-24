@@ -1,8 +1,12 @@
 const codesList = document.getElementsByTagName("code");
-const spanList = document.getElementsByTagName("span");
 const buttonQuizNext = document.getElementById("button-quiz-next");
 const buttonHelper = document.getElementById("button-helper");
+const buttonNextBlock = document.getElementById("button-next-block");
 const sectionHelpers = document.getElementById("helpers");
+let currentCodeBlock = 0;
+
+let spanList = codesList[currentCodeBlock].getElementsByTagName("span");
+
 
 buttonQuizNext.addEventListener('click', ()=> {
     const spanArray = Array.from(spanList);
@@ -14,7 +18,18 @@ buttonQuizNext.addEventListener('click', ()=> {
     spanActive.classList.add('selected');
 })
 
-
 buttonHelper.addEventListener('click', ()=> {
     sectionHelpers.classList.toggle("hidden");
+})
+
+buttonNextBlock.addEventListener('click', ()=> {
+    codesList[currentCodeBlock].classList.remove("active");
+    if(currentCodeBlock < codesList.length - 1) {
+        currentCodeBlock++;
+    }
+    else {
+        currentCodeBlock = 0;
+    }
+    codesList[currentCodeBlock].classList.add("active");
+    spanList = codesList[currentCodeBlock].getElementsByTagName("span");
 })
