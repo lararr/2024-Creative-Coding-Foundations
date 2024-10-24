@@ -1,4 +1,4 @@
-# Mood Emojie Typewriter
+# Mood Emoji Typewriter
 
 This Mood Emoji Typewriter is a fun and interactive tool that lets you express your emotions through emojis. Simply click on different mood buttons, and watch your selected emojis appear in the output. You can clear your selections anytime for a fresh start, making it a playful way to share how you’re feeling!
 
