@@ -85,7 +85,7 @@ button:active {
     /* To simplify layout calculations, padding and border are included in the element's total width and height*/
     box-sizing: border-box;
     /* add image backgrund to the output*/
-    background-image: url(../../../Downloads/wildflowers-with-copyspace.jpg);
+    background-image: url(output_background_photo.jpg);
     /* center the background image */
     background-position: center;
     /* ensure the image covers the entire area */
