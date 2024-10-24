@@ -36,6 +36,9 @@ for (var i = 0; i < buttons.length; i++) {
             this.classList.toggle('btn-winner');
             this.innerHTML = "<img src=\"assets/img/dog.png\" alt=\"buttonpng\" class=\"disabled\"/>";
             result.innerHTML = "Nice Job! It takes you " + tries + " steps!";
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].setAttribute("disabled", "true");
+            }
         }
     });
 }
